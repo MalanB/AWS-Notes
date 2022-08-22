@@ -1,0 +1,35 @@
+My learnings from Practice test #1
+==================================
+
+1. If you want to use licensed software on EC2, go for EC2 dedicated hosts
+2. Cheapest storage option in S3 if data needed readily - S3 1Z infrequent access but data has to sit for atleast 30 days
+3. Cheapest storage option in S3 - S3 glacier deep archive 
+4. S3 storage class can be assigned to each object level
+5. Site to site VPN is called IPsec VPN
+6. There are cloudwatch alarm actions(stop, terminate, reboot, recover) to do common operations bypassing need for intermediate resources
+7. Non HTTP use case means Global accelerator (live streaming, sports etc)
+8. Amazon Guard duty analyses metadata and AWS CloudTrail Events, Amazon VPC Flow Logs, and DNS Logs.
+9. Amazon Macie is maching learning service used to find sensitive data on S3
+10.Gateway endpoint supports S3 and DynamoDB
+11. Launch configuration is a template for auto scaling group. It is uneditable and cannot have both on-demand and spot instances
+12. Launch template is same as LC but can have both on-demand and spot instances
+13. X-Ray provides a map how requests are travelling in a micro service architecture
+14. Spread placement group can span multiple availability zone in same region. Max seven per AZ.
+15. Use Redis Auth if you want to perform caching authentication
+16. GuardDuty analyzes Cloudtrail logs, DNS logs and VPC flow logs
+17. For traffic handling of streaming data, use API gateway + SQS + kinesis
+18. Database management service migrates content from different AWS services to AWS DB solutions and warehousing.
+19. EC2 user data to store any startup scripts or custom data scripts. Executed as root user. Runs only on startup.
+20. By default lambda has access to public internet and other aws api
+21. EBS volumes will have the data even after instance termination unless it is configured as root volume
+22. Graphql - Amazon neptune
+23. S3 always returns the latest version of the data
+24. NAT instance supports port forwarding, act as bastion host and can have security group
+25. Bucket policy is better than ACL and IAM
+26. Snowball edge devices can be copied to S3. No direct copy to glacier available
+27. Cognito user pool to signin/signup people from third party login eg. jumpcloud
+28. Cognito identity pool to allow user pool users to access other AWS resources
+29. use transit gateway to connect your on premises and multiple VPC
+30. use VPC sharing to share VPC between different accounts of your same organization
+31. Amazon FS for lustre is HPC
+32. FIFO queues support 3000 messages/second in queue. Must end in .fifo syntax.
