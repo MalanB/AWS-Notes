@@ -1,0 +1,24 @@
+My learnings from Practice test #2
+==================================
+
+- Use Direct connect with VPN for better performance
+- Lifecycle hooks are for event based trigger. Use scheduled action for time based trigger
+- Different object versions can have different retention period
+- Versioning cannot be turned off except once
+- There is no S3 data transfer charges 
+- ECS with EC2 launch type is charged based on EC2 instance and EBS volumes used
+- ECS with Fargate launch is charged based on vCPU and memory resources
+- For IP address target group we can only use private IP address
+- KMS CMK enforces waiting period of 7-30
+- Firehose cannot directly write into a DynamoDB table
+- Snowball edge can store 80TB data
+- API gateway can throttle requests
+- Use IAM and SSO for federated access
+- Io volumes are better than gp2 volumes
+- Cost of EFS < cost of EBS
+- Kinesis Firehost = loads data from stream to any data store/ analytics. Ex: to S3
+- Kinesis Data Analytics = Analyze streaming data in real time
+- Data flow in kinesis
+	- Data stream (capture)
+	- Analytics   (analyze)
+	- Firehost    (store)
